@@ -1,7 +1,7 @@
 {
-  "name": "friendfinder",
+  "name": "friend_finder",
   "version": "1.0.0",
-  "description": "",
+  "description": "Friend Compaitibility Finder",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,16 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/t868ixb/FriendFinder.git"
+    "url": "git+https://github.com/fredlintz5/friend_finder.git"
   },
-  "author": "Isaac Bayon",
+  "author": "Fred Lintz",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/t868ixb/FriendFinder/issues"
+    "url": "https://github.com/fredlintz5/friend_finder/issues"
   },
-  "homepage": "https://github.com/t868ixb/FriendFinder#readme",
+  "homepage": "https://github.com/fredlintz5/friend_finder#readme",
   "dependencies": {
-    "express": "^4.16.4",
-    "path": "^0.12.7"
+    "express": "^4.16.2"
   }
 }

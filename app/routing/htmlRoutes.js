@@ -1,12 +1,19 @@
-var path = require("path");
 
-module.exports = function (app) {
-    //survey page is served up here
-    app.get("/survey", function (req, res) {
-        res.sendFile(path.join(__dirname, "../public/survey.html"));
-    });
-    // if route does not exist, default to home page
-    app.use(function (req, res) {
-        res.sendFile(path.join(__dirname, "../public/home.html"));
-    });
+module.exports = (app) => {
+
+	app.get('/', (req, res) => {
+		// res.sendFile(path.join(__dirname, 'home.html'));
+		res.sendFile('home.html', { root: './app/public' });
+	});
+
+	app.get('/survey', (req,res) => {
+		// res.sendFile(path.join(__dirname, 'survey.html'));
+		res.sendFile('survey.html', { root: './app/public' });
+	})
+
+	app.get('/logic.js', (req,res) => {
+		// res.sendFile(path.join(__dirname, 'survey.html'));
+		res.sendFile('logic.js', { root: './' });
+	})
 };
+
